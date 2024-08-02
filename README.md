@@ -1,3 +1,15 @@
+# Personal Portfolio 個人ポートフォリオ
+
+ポートフォリオ CARLOS JAVE
+2024/8 release
+
+[ポートフォリオリンクこちら](https://portfolio-carlosjave.vercel.app/) 😊
+
+[Echa un vistazo](https://portfolio-carlosjave.vercel.app/) 😊
+
+---
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
