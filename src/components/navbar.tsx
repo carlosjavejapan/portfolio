@@ -13,8 +13,8 @@ const Navbar = () => {
   const pathname = usePathname() || "/";
   const activeIndex = itemsNavbar.findIndex(item => item.link === pathname);
   const [indicatorProps, setIndicatorProps] = useState({ left: 0, width: 0 });
-  const navRef = useRef(null);
-  const itemRefs = useRef([]);
+  const navRef = useRef<HTMLUListElement>(null);
+  const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
 
   useEffect(() => {
     const navElement = navRef.current;
@@ -43,7 +43,9 @@ const Navbar = () => {
         >
           {itemsNavbar.map((item, index) => (
             <li
-              ref={el => (itemRefs.current[index] = el)}
+              ref={(el) => {
+                itemRefs.current[index] = el;
+              }}
               key={item.id}
               className="z-10 transition duration-150 rounded-full cursor-pointer hover:bg-secondary"
             >
