@@ -8,6 +8,7 @@ export async function POST(request: NextRequest) {
 
   const transport = nodemailer.createTransport({
     service: "gmail",
+    port: 465,
     auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS,
@@ -15,7 +16,7 @@ export async function POST(request: NextRequest) {
   })
 
   const mailOptions: Mail.Options = {
-    from: env.GMAIL_USER,
+    from: email,
     to: env.GMAIL_USER,
     subject: `Desde tu Portfolio enviado por Sr(a)(${name})`,
     text: message + " | Send from" + email,
