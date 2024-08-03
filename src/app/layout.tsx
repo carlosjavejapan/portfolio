@@ -27,12 +27,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={urbanist.className}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-52KLGH2F"
+            height="0"
+            width="0"
+            style={{display:'none',visibility:'hidden'}}
+          ></iframe>
+        </noscript>
         <Navbar />
         <Header />
         {children}
       </body>
       <GoogleAnalytics gaId="G-J89SXYHG3B" />
-      <GoogleTagManager gtmId="G-J89SXYHG3B" />
+      <GoogleTagManager gtmId="GTM-52KLGH2F" />
     </html>
   );
 }
