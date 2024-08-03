@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
@@ -29,6 +31,8 @@ export default function RootLayout({
         <Header />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-J89SXYHG3B" />
+      <GoogleTagManager gtmId="G-J89SXYHG3B" />
     </html>
   );
 }
