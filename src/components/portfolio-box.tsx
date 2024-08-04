@@ -6,10 +6,10 @@ interface PortfolioBoxProps {
     title: string,
     image: string,
     description: string,
-    warning: string,
+    warning?: string,
     languages: string,
-    period: string,
-    urlDemo: string
+    period?: string,
+    urlDemo?: string
   }
 }
 const PortfolioBox = (props: PortfolioBoxProps) => {
