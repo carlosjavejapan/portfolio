@@ -28,9 +28,9 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
             <div className="px-4 flex flex-col gap-x-2 text-[13px] tracking-[0.2em]">
               <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-400 text-light-gray">
                 <p className="mt-2">{description}</p>
-                <p className="text-[11px]">{warning}</p>
+                {warning && <p className="text-[11px]">{warning}</p>}
                 <p className="mt-2 font-bold">{languages}</p>
-                <p className="mt-2">{period}</p>
+                {period && <p className="mt-2">{period}</p>}
               </div>
               {urlDemo && (
                 <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200 inline-flex mt-2">

@@ -16,11 +16,11 @@ import {
 } from "lucide-react";
 
 export const socialNetworks = [
-  // {
-  //   id: 1,
-  //   logo: <Youtube size={20} strokeWidth={1} />,
-  //   src: "#!",
-  // },
+  {
+    id: 1,
+    logo: <Youtube size={20} strokeWidth={1} />,
+    src: "https://www.youtube.com/@emaleona6031",
+  },
   {
     id: 2,
     logo: <Linkedin size={20} strokeWidth={1} />,
@@ -232,6 +232,14 @@ export const dataPortfolio = [
     languages: "HTML5, CSS3, JavaScript(jquery), Pug, Sass, Dreamweaver, SublimeText3, Atom, Illustrator, Prepros, TortoiseSVN, A/Bテスト(VWO,Optimizely)",
     period: "期間 4年3ヶ月（業務委託）2016/01~2020/03",
     urlDemo: "https://haisha-yoyaku.jp/",
+  },
+  {
+    id: 9,
+    title: "2021~2023 Portfolio",
+    image: "/images/work_9.png",
+    description: "個人ポートフォリオ２０２１〜２０２３",
+    languages: "HTML5, CSS3, JavaScript & (jquery),SublimeText3, Illustrator",
+    urlDemo: "https://carlosjavejapan.github.io/2021-portfolio/",
   },
   {
     id: 4,
